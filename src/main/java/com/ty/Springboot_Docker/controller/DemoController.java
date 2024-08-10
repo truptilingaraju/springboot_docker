@@ -14,7 +14,13 @@ public class DemoController {
 
     @GetMapping("/message/{name}")
     public String message(@PathVariable String name){
-        return "welcome to springboot project" + name;
+        return "welcome to springboot project " + name;
+    }
+
+
+    @GetMapping("/welcome")
+    public String getMessage(){
+        return "welcome to spring boot docker project";
     }
 
 }

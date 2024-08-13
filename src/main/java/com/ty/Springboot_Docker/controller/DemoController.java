@@ -23,4 +23,9 @@ public class DemoController {
         return "welcome to spring boot docker project";
     }
 
+    @GetMapping("/message")
+    public String message(){
+        return "message";
+    }
+
 }
